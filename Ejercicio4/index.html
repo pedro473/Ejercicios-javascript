@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var nombre = prompt('Como te llamas?');
+        var edad = prompt('Que edad tienes?');
+
+        var nombre1 = prompt('Como te llamas?');
+        var edad1 = prompt('Que edad tienes?');
+
+        if(edad == edad1){
+            document.write(`${nombre} tiene la misma edad que ${nombre1}`)
+        }
+        else if(edad < edad1){
+            document.write(`${nombre} tiene ${edad} años y  es mayor a ${edad1} que tiene ${edad1} años `)
+
+         }
+        else if(edad > edad1){
+            document.write(`${nombre1} tiene ${edad1} años y es mayor a ${nombre} que tiene ${edad} años `)
+
+
+         }
+         else{
+            document.write(`error`)
+         }
+    </script>
+    
+</body>
+</html>

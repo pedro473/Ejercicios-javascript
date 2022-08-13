@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <script>
+        var precio_manzana = 2;
+        var kilos_manzanas = prompt('Cuanto kg de manzana compraste?');
+        var precio_naranja = 2.5
+        var kilos_naranjas = prompt('Cuanto kg de naranjas compraste?');
+        var precio_platano = 1.75;
+        var kilos_platano = prompt('Cuantos kg de platano compraste?');
+        var compra = Number(precio_manzana) * Number(kilos_manzanas) ;
+        document.write(compra);
+
+        producto1 = Number(precio_naranja) * Number(kilos_naranjas);
+        document.write('<br>')
+        document.write(producto1)
+        compra = compra + producto1;
+        document.write('<br>')
+
+        document.write(compra);
+        document.write('<br>')
+
+        producto2 = Number(precio_platano) * Number(kilos_platano);
+
+        document.write(producto2);
+        document.write('<br>');
+        compra = compra + producto2;
+        document.write('<br>');
+        document.write(compra);
+        document.write('<br>');
+
+
+        var oferta = 0.08;
+
+        var descuento = compra * oferta;
+        document.write(descuento);
+
+        document.write('<br>');
+
+        compra = compra - descuento;
+        document.write('<br>');
+
+        document.write(compra);
+
+        alert('El precio de su compra es ' + compra + ' '  +  'Euros');
+        
+
+      
+    </script>
+</body>
+</html>
